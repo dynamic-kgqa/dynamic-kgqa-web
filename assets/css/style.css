@@ -39,3 +39,13 @@
     text-align: center;
   }
   
+  nav ul li a[href*="projects"],
+  nav ul li a[href*="blog"],
+  nav ul li a[href*="about"] {
+    display: none !important;
+  }
+  
+  footer {
+    display: none !important;
+  }
+  
