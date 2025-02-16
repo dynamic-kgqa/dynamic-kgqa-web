@@ -11,39 +11,6 @@
   color: white;
 }
 
-.navbar {
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar {
-  background: #b1c1de;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #bbcde2, #b1c1de);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #bbcde2, #b1c1de); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-[data-theme="dark"] .navbar {
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-a.navbar-brand {
-  color: #001f40;
-  font-weight: bold;
-}
-
-[data-theme="dark"] a.navbar-brand {
-  color: #bfdeff;
-}
-
-a.nav-item {
-  color: #001f40;
-}
-
 [data-theme="dark"] a.nav-item {
   color: #bfdeff;
 }
@@ -59,8 +26,8 @@ a.nav-item {
 .hero {
   text-align: center;
   /* padding: 60px 20px; */
-  background: #333;
-  color: white;
+  /*A light colored background*/
+  background: #bbbbbb;
 }
 
 .hero h1 {
@@ -75,8 +42,8 @@ a.nav-item {
 
 .button-group .btn {
   display: inline-block;
-  background: white;
-  color: #333;
+  color: white;
+  background: #333;
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
