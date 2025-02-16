@@ -51,3 +51,20 @@ a.nav-item {
 .navbar {
   display: none;
 }
+
+[data-theme="dark"] body {
+  background-color: #17191a;
+  color: white;
+}
+
+[data-theme="dark"] a.nav-item {
+  color: #bfdeff;
+}
+
+#theme-toggler:before {
+  content: "🌙";
+}
+
+[data-theme="dark"] #theme-toggler:before {
+  content: "🌞";
+}

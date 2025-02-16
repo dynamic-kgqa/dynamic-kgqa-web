@@ -1,33 +1,26 @@
-.container {
-  max-width: 100%;
+/* Add additional container sizes */
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px;
+  }
 }
 
 .mt-5 {
   margin-top: 0px !important;
-}
-
-[data-theme="dark"] body {
-  background-color: #17191a;
-  color: white;
-}
-
-[data-theme="dark"] a.nav-item {
-  color: #bfdeff;
-}
-
-#theme-toggler:before {
-  content: "🌙";
-}
-
-[data-theme="dark"] #theme-toggler:before {
-  content: "🌞"
+  max-width: 100% !important;
 }
 
 .hero {
   text-align: center;
-  /* padding: 60px 20px; */
+  padding: 60px 20px;
   /*A light colored background*/
   background: #bbbbbb;
+}
+
+.hero {
+  background-color: #8BC6EC;
+  background-image: -webkit-linear-gradient(135deg, #a8d4f1 0%, #afb2e9 100%);
+  background-image: linear-gradient(135deg, #a8d4f1 0%, #afb2e9 100%);
 }
 
 .hero h1 {
@@ -53,7 +46,7 @@
 }
 
 .button-group .btn:hover {
-  background: #ddd;
+  background: #777;
 }
 
 .content {
@@ -62,6 +55,10 @@
   padding: 0 20px;
   line-height: 1.6;
   text-align: center;
+}
+
+.content > h2 {
+  color: #0d3651;
 }
 
 nav ul li a[href*="projects"],
