@@ -57,6 +57,10 @@
   text-align: justify;
 }
 
+.header-content > h2 {
+  color: #0d3651;
+}
+
 .content {
   /* max-width: 800px; */
   margin: 40px auto;
@@ -73,6 +77,11 @@ nav ul li a[href*="projects"],
 nav ul li a[href*="blog"],
 nav ul li a[href*="about"] {
   display: none !important;
+}
+
+.dataset-columns {
+  margin: 0;
+  padding-top: 0.2rem;
 }
 
 footer {
