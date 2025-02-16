@@ -18,11 +18,14 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
+  - pages/projects.html
+  - pages/blog.html
+  - pages/about.md
 
 
 ### Author Info ###
 author:
-  name              : John Doe
+  name              : DynamicKGQA
   image             : https://i.imgur.com/uyDNQnn.jpg
   behance           : your_username
 # dribbble          : your_username
