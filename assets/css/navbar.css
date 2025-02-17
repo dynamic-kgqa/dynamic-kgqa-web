@@ -63,8 +63,3 @@ a.nav-item {
 [data-theme="dark"] #theme-toggler:before {
   content: "🌞";
 }
-
-/* Remove the navbar for now */
-.navbar {
-    display: none;
-}

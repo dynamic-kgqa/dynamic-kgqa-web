@@ -5,6 +5,11 @@
   }
 }
 
+/* Remove the navbar for now */
+.navbar {
+  display: none;
+}
+
 .mt-5 {
   margin-top: 0px !important;
   max-width: 100% !important;
