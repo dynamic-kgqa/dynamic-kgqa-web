@@ -1,24 +1,115 @@
 <head>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/navbar.css' | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.ico' | relative_url }}">
 </head>
 
 <div class="hero">
-    <h1>Dynamic-KGQA</h1>
-    <p>A Dynamic Knowledge Graph Question Answering Framework</p>
-    <div class="button-group">
-      <a href="/dynamic-kgqa-web/dataset" class="btn">Dataset</a>
-      <a href="/dynamic-kgqa-web/demo" class="btn">Live Demo</a>
-      <a href="/dynamic-kgqa-web/paper" class="btn">Paper</a>
-      <a href="https://github.com/your-username/dynamic-kgqa-web" class="btn">GitHub</a>
-    </div>
+  <h1>Dynamic-KGQA</h1>
+  <p>A Dynamic Knowledge Graph Question Answering Framework</p>
+  <div class="button-group">
+    <a href="https://huggingface.co/datasets/preetam7/dynamic_kgqa" class="btn">Dataset</a>
+    <!-- <a href="/dynamic-kgqa-web/demo" class="btn">Live Demo</a> -->
+    <a href="/dynamic-kgqa-web/paper" class="btn">Paper</a>
+    <a href="https://github.com/your-username/dynamic-kgqa-web" class="btn">GitHub</a>
   </div>
-  
-  <section class="content">
+</div>
+
+<div class="container">
+  <section class="header-content">
     <h2>About Dynamic-KGQA</h2>
-    <p>Dynamic-KGQA is a flexible framework for knowledge graph question answering.</p>
+    <p>
+      In this work, we introduce <b>Dynamic-KGQA</b>, a scalable framework for generating adaptive QA 
+      datasets from knowledge graphs (KGs), designed to mitigate memorization risks while maintaining 
+      statistical consistency across iterations. Unlike fixed benchmarks, <b>Dynamic-KGQA</b> generates a 
+      new dataset variant on every run while preserving the underlying distribution, enabling fair and 
+      reproducible evaluations. 
+    </p>
+    <p>
+      Furthermore, our framework provides fine-grained control over dataset characteristics, 
+      supporting domain-specific and topic-focused QA dataset generation. 
+    </p>
+    <p>
+      Additionally, <b>Dynamic-KGQA</b> produces compact, semantically coherent subgraphs that 
+      facilitate both training and evaluation of KGQA models, enhancing their ability to leverage 
+      structured knowledge effectively.
+    </p>
+  </section>
+
+  <section class="content">
+    <h2>Download Links</h2>
     <ul>
-      <li>🔍 Diverse QA Generation </li>
-      <li>🚀 Benchmarking KGQA Methods</li>
+      <li><a href="https://huggingface.co/datasets/preetam7/dynamic_kgqa">Dynamic-KGQA Dataset</a></li>
+      <li><a href="/dynamic-kgqa-web/">Github Repository</a></li>
     </ul>
   </section>
+
+  <section class="content">
+    <h2>Citation</h2>
+    <p>
+      If you use the <b>Dynamic-KGQA</b> dataset or codebase in your work, please cite the following paper:
+    </p>
+    <pre>
+      @article{2025dynamickgqa,
+        title={Dynamic-KGQA: A Dynamic Knowledge Graph Question Answering Framework},
+        author={Preetam Prabhu Srikar Dammu and Himanshu Naidu and Chirag Shah},
+        journal={arXiv preprint arXiv:2109.03893},
+        year={2025}
+      }
+    </pre>
+    <p>You can also cite the dataset directly using the following DOI:</p>
+  </section>
+
+  <section class="content">
+    <h2>Dataset Format</h2>
+    <p>
+      The dataset is available in the Hugging Face Datasets format. 
+      You can load the dataset using the following code snippet:
+    </p>
+    <pre>
+      <code>
+      from datasets import load_dataset
+      dataset = load_dataset("preetam7/dynamic_kgqa")
+      </code>
+    </pre>
+
+    <p>
+      The dataset contains the following columns:
+      <ul class="dataset-columns">
+        <li>
+          <code style="display: inline;">id</code>
+          The ID of the sample
+        </li>
+        <li>
+          <code style="display: inline;">question</code>
+          The question text
+        </li>
+        <li>
+          <code style="display: inline;">answer</code>
+          The answer text
+        </li>
+        <li>
+          <code style="display: inline;">answer_readable</code>
+          The human-readable answer text
+        </li>
+        <li>
+          <code style="display: inline;">answer_uri</code>
+          The Yago URI of the answer entity
+        </li>
+        <li>
+          <code style="display: inline;">supporting_facts</code>
+          The supporting facts for the answer in the form of knowledge graph triplet labels
+        </li>
+        <li>
+          <code style="display: inline;">supporting_facts_uri</code>
+          The supporting facts for the answer in the form of knowledge graph triplet URIs
+        </li>
+      </ul>
+    </p>
+  </section>
   
+</div>
+
+<div class="footer">
+  <p>© 2025 Dynamic-KGQA</p>
+</div>

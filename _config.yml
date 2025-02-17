@@ -5,7 +5,7 @@ url: "https://preetamdammu.github.io"
 baseurl: "/dynamic-kgqa-web" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : yousinix/portfolYOU      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
-open_new_tab        : false                    # Opens external URLs in new tab (works for posts, projects and navbar only)
+open_new_tab        : true                    # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
 ### Plugins ###
@@ -18,11 +18,14 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
+  - pages/projects.html
+  - pages/blog.html
+  - pages/about.md
 
 
 ### Author Info ###
 author:
-  name              : John Doe
+  name              : DynamicKGQA
   image             : https://i.imgur.com/uyDNQnn.jpg
   behance           : your_username
 # dribbble          : your_username
