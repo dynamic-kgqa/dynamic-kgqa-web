@@ -38,7 +38,7 @@
   </section>
 
   <section class="content">
-    <h2>Download Links</h2>
+    <h2>Important Links</h2>
     <ul>
       <li><a href="https://huggingface.co/datasets/preetam7/dynamic_kgqa">Dynamic-KGQA Dataset</a></li>
       <li><a href="https://github.com/PreetamDammu/dynamicKGQA">Github Repository</a></li>
@@ -62,9 +62,22 @@
   </section>
 
   <section class="content">
+    <h2>Knowledge Graph Hosting</h2>
+    <p>
+      While it is possible to use any knowledge graph with the <b>Dynamic-KGQA</b> framework,
+      we built our dataset using the Yago knowledge graph for generating QA pairs. 
+      The Yago knowledge graph is available for download from the <a href="https://yago-knowledge.org/data/yago4.5/">Yago website</a>.
+    </p>
+    <p>
+      There are multiple ways to host the Yago knowledge graph for use with the <b>Dynamic-KGQA</b> framework. 
+      The instructions for hosting the Yago knowledge graph using a Docker Blazegraph container are provided in our <a href="https://github.com/PreetamDammu/dynamicKGQA/tree/main/src/kg">GitHub repository</a>.
+    </p>
+  </section>
+
+  <section class="content">
     <h2>Dataset Format</h2>
     <p>
-      The dataset is available in the Hugging Face Datasets format. 
+      The public dataset created by the DynamicKGQA framework is available in the Hugging Face Datasets format. 
       You can load the dataset using the following code snippet:
     </p>
     <pre>
