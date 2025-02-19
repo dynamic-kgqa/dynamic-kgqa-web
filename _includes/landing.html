@@ -9,10 +9,10 @@
   <h1>Dynamic-KGQA</h1>
   <p>A Dynamic Knowledge Graph Question Answering Framework</p>
   <div class="button-group">
-    <a href="https://huggingface.co/datasets/preetam7/dynamic_kgqa" class="btn">Dataset</a>
     <!-- <a href="/dynamic-kgqa-web/demo" class="btn">Live Demo</a> -->
     <a href="/dynamic-kgqa-web/paper" class="btn">Paper</a>
-    <a href="https://github.com/your-username/dynamic-kgqa-web" class="btn">GitHub</a>
+    <a href="https://github.com/PreetamDammu/dynamicKGQA" class="btn">GitHub</a>
+    <a href="https://huggingface.co/datasets/preetam7/dynamic_kgqa" class="btn">Dataset</a>
   </div>
 </div>
 
@@ -41,7 +41,7 @@
     <h2>Download Links</h2>
     <ul>
       <li><a href="https://huggingface.co/datasets/preetam7/dynamic_kgqa">Dynamic-KGQA Dataset</a></li>
-      <li><a href="/dynamic-kgqa-web/">Github Repository</a></li>
+      <li><a href="https://github.com/PreetamDammu/dynamicKGQA">Github Repository</a></li>
     </ul>
   </section>
 
@@ -79,31 +79,71 @@
       <ul class="dataset-columns">
         <li>
           <code style="display: inline;">id</code>
-          The ID of the sample
+          The unique identifier for the QA pair.
         </li>
         <li>
           <code style="display: inline;">question</code>
-          The question text
+          The input question text.
         </li>
         <li>
           <code style="display: inline;">answer</code>
-          The answer text
+          The answer text (typically a Yago entity).
         </li>
         <li>
           <code style="display: inline;">answer_readable</code>
-          The human-readable answer text
+          The human-readable answer text.
         </li>
         <li>
           <code style="display: inline;">answer_uri</code>
-          The Yago URI of the answer entity
+          The Yago URI of the answer entity.
         </li>
         <li>
           <code style="display: inline;">supporting_facts</code>
-          The supporting facts for the answer in the form of knowledge graph triplet labels
+          The supporting Yago triples for the answer in the form of knowledge graph triplet labels.
         </li>
         <li>
           <code style="display: inline;">supporting_facts_uri</code>
-          The supporting facts for the answer in the form of knowledge graph triplet URIs
+          The URIs of the supporting Yago triples for the answer.
+        </li>
+        <li>
+          <code style="display: inline;">subgraph</code>
+          The subgraph used to generate the QA pair.
+        </li>
+        <li>
+          <code style="display: inline;">subgraph_size</code>
+          The size of the subgraph used to generate the QA pair.
+        </li>
+        <li>
+          <code style="display: inline;">logical_structure_flag_n</code>
+          Flag by the nth LLM-as-judge, indicating if the QA pair has a logical structure.
+        </li>
+        <li>
+          <code style="display: inline;">logical_structure_reasoning_n</code>
+          Explanation of the logical structure flag by the nth LLM-as-judge.
+        </li>
+        <li>
+          <code style="display: inline;">redundancy_flag_n</code>
+          Flag by the nth LLM-as-judge, indicating if the QA pair is trivial or the question includes the answer.
+        </li>
+        <li>
+          <code style="display: inline;">redundancy_reasoning_n</code>
+          Explanation of the redundancy flag by the nth LLM-as-judge.
+        </li>
+        <li>
+          <code style="display: inline;">answer_support_flag_n</code>
+          Flag by the nth LLM-as-judge, indicating if the supporting Yago triples substantiate the answer.
+        </li>
+        <li>
+          <code style="display: inline;">answer_support_reasoning_n</code>
+          Explanation of the answer support flag by the nth LLM-as-judge.
+        </li>
+        <li>
+          <code style="display: inline;">answer_adequacy_flag_n</code>
+          Flag by the nth LLM-as-judge, indicating if the answer is adequate for the question.
+        </li>
+        <li>
+          <code style="display: inline;">answer_adequacy_reasoning_n</code>
+          Explanation of the answer adequacy flag by the nth LLM-as-judge.
         </li>
       </ul>
     </p>
