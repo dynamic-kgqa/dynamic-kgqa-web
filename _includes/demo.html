@@ -22,11 +22,17 @@
 
         <div class="content-grid">
         {% for graph in site.data.graphs.graphs %}
-        <div>
+        {% assign remainder = forloop.index | modulo: 2 %}
+        {% if remainder == 1 %}
+        {% assign animation_class = "fadeInLeft" %}
+        {% else %}
+        {% assign animation_class = "fadeInRight" %}
+        {% endif %}
+        <div class="wow animated {{ animation_class }}">
             <img src="{{ '/assets/Globe.ico' | relative_url }}" alt="Graph Image" class="graph-image">
             <p><strong>{{ graph.name | default: graph.id }}</strong></p>
             <p>{{ graph.description }}</p>
-            <a href="/dynamic-kgqa-web/graphs/{{ graph.id }}" class="btn">Explore</a>
+            <a href="/dynamic-kgqa-web/subgraph?id={{ graph.id }}" class="btn">Explore</a>
         </div>
         {% endfor %}
         </div>
