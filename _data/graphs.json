@@ -2,6 +2,8 @@
     "graphs": [
         {
             "id": "graph1",
+            "name": "Football Clubs and Players",
+            "description": "This graph contains information about football clubs and players, focusing on their career connections.",
             "nodes": [
                 {
                     "id": "n0",

@@ -23,7 +23,10 @@
         <div class="content-grid">
         {% for graph in site.data.graphs.graphs %}
         <div>
-            {{ forloop.index }}. <strong>{{ graph.id }}</strong>
+            <img src="{{ '/assets/Globe.ico' | relative_url }}" alt="Graph Image" class="graph-image">
+            <p><strong>{{ graph.name | default: graph.id }}</strong></p>
+            <p>{{ graph.description }}</p>
+            <a href="/dynamic-kgqa-web/graphs/{{ graph.id }}" class="btn">Explore</a>
         </div>
         {% endfor %}
         </div>
