@@ -1,0 +1,458 @@
+{
+    "graphs": [
+        {
+            "id": "graph1",
+            "nodes": [
+                {
+                    "id": "n0",
+                    "label": "\u00c1d\u00e1m Bogd\u00e1n"
+                },
+                {
+                    "id": "n1",
+                    "label": "Bolton Wanderers F.C."
+                },
+                {
+                    "id": "n2",
+                    "label": "Wigan Athletic F.C."
+                },
+                {
+                    "id": "n3",
+                    "label": "Gary Cahill"
+                },
+                {
+                    "id": "n4",
+                    "label": "English Football League"
+                },
+                {
+                    "id": "n5",
+                    "label": "Aston Villa F.C."
+                },
+                {
+                    "id": "n6",
+                    "label": "Steve Fulton"
+                },
+                {
+                    "id": "n7",
+                    "label": "Celtic F.C."
+                },
+                {
+                    "id": "n8",
+                    "label": "Partick Thistle F.C."
+                },
+                {
+                    "id": "n9",
+                    "label": "Peterborough United F.C."
+                },
+                {
+                    "id": "n10",
+                    "label": "Jay Fulton"
+                },
+                {
+                    "id": "n11",
+                    "label": "Swansea City A.F.C."
+                }
+            ],
+            "edges": [
+                {
+                    "id": "e0",
+                    "source": "n0",
+                    "target": "n1",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e1",
+                    "source": "n0",
+                    "target": "n2",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e2",
+                    "source": "n3",
+                    "target": "n4",
+                    "label": "playsIn"
+                },
+                {
+                    "id": "e3",
+                    "source": "n3",
+                    "target": "n1",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e4",
+                    "source": "n3",
+                    "target": "n5",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e5",
+                    "source": "n6",
+                    "target": "n7",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e6",
+                    "source": "n6",
+                    "target": "n8",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e7",
+                    "source": "n6",
+                    "target": "n1",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e8",
+                    "source": "n6",
+                    "target": "n9",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e9",
+                    "source": "n10",
+                    "target": "n2",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e10",
+                    "source": "n10",
+                    "target": "n11",
+                    "label": "memberOf"
+                }
+            ],
+            "datapoints": [
+                {
+                    "question": "Which football club connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history?",
+                    "answer": "Bolton Wanderers F.C.",
+                    "supporting_facts": [
+                        {
+                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
+                            "predicate": "memberOf",
+                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                        },
+                        {
+                            "subject": "Steve_Fulton",
+                            "predicate": "memberOf",
+                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e0",
+                        "e7"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton have a career history involving Bolton Wanderers F.C., which implies that the answer is supported by the given facts.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly addresses the question, asking which football club connects the two individuals, and Bolton Wanderers F.C. is a sufficient and clear response."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton are members of Bolton Wanderers F.C., as indicated by the supporting facts.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts explicitly state that both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton were members of Bolton Wanderers F.C., which directly supports the answer.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
+                        }
+                    ]
+                },
+                {
+                    "question": "Which football club connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history?",
+                    "answer": "Wigan Athletic F.C.",
+                    "supporting_facts": [
+                        {
+                            "subject": "Jay_Fulton",
+                            "predicate": "memberOf",
+                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
+                        },
+                        {
+                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
+                            "predicate": "memberOf",
+                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e9",
+                        "e1"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n have a career history triple featuring 'Wigan_Athletic_F_u002E_C_u002E_'",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer sufficiently clarifies the connection between Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n, stating the football club that they both have been members of."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are members of Wigan Athletic F.C., as indicated by the supporting facts.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The answer 'Wigan Athletic F.C.' is explicitly supported by the provided facts. Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are listed as members of Wigan Athletic F.C., which directly connects them in their career history.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer 'Wigan Athletic F.C.' fully and clearly addresses the question. It directly states the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "graph2",
+            "nodes": [
+                {
+                    "id": "n0",
+                    "label": "\u00c1d\u00e1m Bogd\u00e1n"
+                },
+                {
+                    "id": "n1",
+                    "label": "Bolton Wanderers F.C."
+                },
+                {
+                    "id": "n2",
+                    "label": "Wigan Athletic F.C."
+                },
+                {
+                    "id": "n3",
+                    "label": "Gary Cahill"
+                },
+                {
+                    "id": "n4",
+                    "label": "English Football League"
+                },
+                {
+                    "id": "n5",
+                    "label": "Aston Villa F.C."
+                },
+                {
+                    "id": "n6",
+                    "label": "Steve Fulton"
+                },
+                {
+                    "id": "n7",
+                    "label": "Celtic F.C."
+                },
+                {
+                    "id": "n8",
+                    "label": "Partick Thistle F.C."
+                },
+                {
+                    "id": "n9",
+                    "label": "Peterborough United F.C."
+                },
+                {
+                    "id": "n10",
+                    "label": "Jay Fulton"
+                },
+                {
+                    "id": "n11",
+                    "label": "Swansea City A.F.C."
+                }
+            ],
+            "edges": [
+                {
+                    "id": "e0",
+                    "source": "n0",
+                    "target": "n1",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e1",
+                    "source": "n0",
+                    "target": "n2",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e2",
+                    "source": "n3",
+                    "target": "n4",
+                    "label": "playsIn"
+                },
+                {
+                    "id": "e3",
+                    "source": "n3",
+                    "target": "n1",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e4",
+                    "source": "n3",
+                    "target": "n5",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e5",
+                    "source": "n6",
+                    "target": "n7",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e6",
+                    "source": "n6",
+                    "target": "n8",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e7",
+                    "source": "n6",
+                    "target": "n1",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e8",
+                    "source": "n6",
+                    "target": "n9",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e9",
+                    "source": "n10",
+                    "target": "n2",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e10",
+                    "source": "n10",
+                    "target": "n11",
+                    "label": "memberOf"
+                }
+            ],
+            "datapoints": [
+                {
+                    "question": "Which football club connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history?",
+                    "answer": "Bolton Wanderers F.C.",
+                    "supporting_facts": [
+                        {
+                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
+                            "predicate": "memberOf",
+                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                        },
+                        {
+                            "subject": "Steve_Fulton",
+                            "predicate": "memberOf",
+                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e0",
+                        "e7"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton have a career history involving Bolton Wanderers F.C., which implies that the answer is supported by the given facts.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly addresses the question, asking which football club connects the two individuals, and Bolton Wanderers F.C. is a sufficient and clear response."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton are members of Bolton Wanderers F.C., as indicated by the supporting facts.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts explicitly state that both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton were members of Bolton Wanderers F.C., which directly supports the answer.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
+                        }
+                    ]
+                },
+                {
+                    "question": "Which football club connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history?",
+                    "answer": "Wigan Athletic F.C.",
+                    "supporting_facts": [
+                        {
+                            "subject": "Jay_Fulton",
+                            "predicate": "memberOf",
+                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
+                        },
+                        {
+                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
+                            "predicate": "memberOf",
+                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e9",
+                        "e1"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n have a career history triple featuring 'Wigan_Athletic_F_u002E_C_u002E_'",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer sufficiently clarifies the connection between Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n, stating the football club that they both have been members of."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are members of Wigan Athletic F.C., as indicated by the supporting facts.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The answer 'Wigan Athletic F.C.' is explicitly supported by the provided facts. Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are listed as members of Wigan Athletic F.C., which directly connects them in their career history.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer 'Wigan Athletic F.C.' fully and clearly addresses the question. It directly states the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

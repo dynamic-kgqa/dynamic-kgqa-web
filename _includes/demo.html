@@ -1,5 +1,6 @@
 <head>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/demo.css' | relative_url }}">
     <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.ico' | relative_url }}">
 </head>
 
@@ -13,5 +14,18 @@
     </div>
     </div>
 
-    <div class="demo-container"></div>
+    <div class="container">
+        <section class="header-content">
+            <h2>Explore Subgraphs</h2>
+            <p>Interact and Explore various Subgraphs.</p>
+        </section>
+
+        <div class="content-grid">
+        {% for graph in site.data.graphs.graphs %}
+        <div>
+            {{ forloop.index }}. <strong>{{ graph.id }}</strong>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
 </body>
