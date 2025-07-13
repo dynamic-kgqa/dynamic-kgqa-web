@@ -3,6 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sub-Graph Visualization</title>
   <link rel="stylesheet" href="/dynamic-kgqa-web/assets/css/style.css" />
+  <link rel="stylesheet" href="/dynamic-kgqa-web/assets/css/demo.css" />
   <link rel="stylesheet" href="/dynamic-kgqa-web/assets/css/subgraph.css" />
   <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
 </head>
@@ -14,23 +15,17 @@
     const graphData = graphs.find(g => g.id === graphId);
   </script>
 
-  <div class="hero">
+  <div class="mini-hero">
     <h1 id="graph-title">Sub-graph: Loading...</h1>
     <p id="graph-description"></p>
     <div class="button-group"></div>
   </div>
 
-  <!-- <div class="datapoint-container">
-    <div id="datapoint-panel">
-      <h2>Data Points</h2>
-      <div class="datapoint-btn" title="Show Q/A">Loading...</div>
-    </div>
-  </div> -->
-
   <div class="layout-container">
     <div class="info-container">
         <div id="datapoint-panel">
-            <h2>Data Points</h2>
+            <h2>QA Points</h2>
+            <p>Select a QA point to view the subgraph and its details</p>
             <div id="datapoint-panel-content">
               <!-- Data points will be dynamically added here -->
             </div>
@@ -41,19 +36,17 @@
         </div>
     </div>
 
-    <div class="main-column">
-      <div class="graph-wrapper">
+    <div class="graph-container">
         <div id="cy"></div>
-      </div>
+    </div>
 
-      <div id="llm-judges-container">
+    <div class="llm-judges-container">
         <h2>LLM Judges</h2>
         <div id="llm-judges-row">
-          <div class="llm-judge-box" id="llm-judge-1"></div>
-          <div class="llm-judge-box" id="llm-judge-2"></div>
-          <div class="llm-judge-box" id="llm-judge-3"></div>
+            <div class="llm-judge-box" id="llm-judge-1"></div>
+            <div class="llm-judge-box" id="llm-judge-2"></div>
+            <div class="llm-judge-box" id="llm-judge-3"></div>
         </div>
-      </div>
     </div>
   </div>
 
