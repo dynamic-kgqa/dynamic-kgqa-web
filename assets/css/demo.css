@@ -65,7 +65,7 @@ Grid that displays at max 2 columns per row.
     margin-top: 10px;
 }
 
-[data-theme="dark"] .content-grid > div {
+/* [data-theme="dark"] .content-grid > div {
     background: #2c2c2c;
     color: white;
 }
@@ -73,4 +73,4 @@ Grid that displays at max 2 columns per row.
 [data-theme="dark"] .content-grid > div a {
     background-color: #444;
     color: #fff;
-}
+} */

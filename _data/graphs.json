@@ -231,6 +231,7 @@
         },
         {
             "id": "graph2",
+            "name": "Football Clubs and Players 2",
             "nodes": [
                 {
                     "id": "n0",
@@ -458,6 +459,7 @@
         },
         {
             "id": "graph3",
+            "name": "Football Clubs and Players 3",
             "nodes": [
                 {
                     "id": "n0",
@@ -685,6 +687,7 @@
         },
         {
             "id": "graph4",
+            "name": "Football Clubs and Players 4",
             "nodes": [
                 {
                     "id": "n0",
