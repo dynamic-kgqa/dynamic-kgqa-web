@@ -1,0 +1,166 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sub-Graph Visualization</title>
+  <link rel="stylesheet" href="/dynamic-kgqa-web/assets/css/style.css" />
+  <link rel="stylesheet" href="/dynamic-kgqa-web/assets/css/demo.css" />
+  <link rel="stylesheet" href="/dynamic-kgqa-web/assets/css/subgraph.css" />
+  <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
+</head>
+<body>
+  <div class="mini-hero">
+    <h1 id="graph-title">Sub-graph: Loading...</h1>
+    <p id="graph-description"></p>
+    <div class="button-group">
+      <button class="btn" onclick="updateGraphData()">Regenerate</button>
+    </div>
+  </div>
+
+  <div class="layout-container">
+    <div class="info-container">
+        <div id="datapoint-panel">
+            <h2>QA Points</h2>
+            <p>Select a QA point to view the subgraph and its details</p>
+            <div id="datapoint-panel-content">
+              <!-- Data points will be dynamically added here -->
+            </div>
+        </div>
+        <div id="qa-panel">
+            <h2>Question & Answer</h2>
+            <div id="qa-content"></div>
+        </div>
+    </div>
+
+    <div class="graph-container">
+        <div id="cy"></div>
+    </div>
+
+    <div class="llm-judges-container">
+        <h2>LLM Judges</h2>
+        <div id="llm-judges-row">
+            <div class="llm-judge-box" id="llm-judge-1"></div>
+            <div class="llm-judge-box" id="llm-judge-2"></div>
+            <div class="llm-judge-box" id="llm-judge-3"></div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    const judgeBoxes = [
+      document.getElementById('llm-judge-1'),
+      document.getElementById('llm-judge-2'),
+      document.getElementById('llm-judge-3')
+    ];
+
+    function clearJudges() {
+      judgeBoxes.forEach((box, idx) => {
+        box.innerHTML = `<div class="judge-title">LLM Judge ${idx + 1}</div><div class="judge-empty">No data</div>`;
+      });
+    }
+
+    function clearDataPoints() {
+      const panel = document.getElementById('datapoint-panel-content');
+      panel.innerHTML = ''; // Clear existing data points
+    }
+
+    function clearQAContent() {
+      const qaContent = document.getElementById('qa-content');
+      qaContent.innerHTML = ''; // Clear existing Q/A content
+    }
+
+    function renderHeader(graphData) {
+      document.getElementById('graph-title').textContent = `Sub-graph: ${graphData.name}`;
+      document.getElementById('graph-description').textContent = graphData.description ?? 'No description available';
+    }
+
+    function renderQA(qaContent, judgeBoxes, dp) {
+      qaContent.innerHTML = `
+        <div class="qa-title">Question</div>
+        <div class="qa-text">${dp.question}</div>
+        <div class="qa-title">Answer</div>
+        <div class="qa-answer">${dp.answer}</div>
+      `;
+
+      (dp.llm_judges || []).forEach((judge, idx) => {
+        judgeBoxes[idx].innerHTML = `
+          <div class="judge-title">LLM Judge ${idx + 1}</div>
+          <div><b>Logical Structure:</b> ${judge.logical_structure_flag ?? '—'}</div>
+          <div>${judge.logical_structure_reasoning ?? '—'}</div>
+          <div><b>Redundancy:</b> ${judge.redundancy_flag ?? '—'}</div>
+          <div>${judge.redundancy_reasoning ?? '—'}</div>
+          <div><b>Answer Support:</b> ${judge.answer_support_flag ?? '—'}</div>
+          <div>${judge.answer_support_reasoning ?? '—'}</div>
+          <div><b>Answer Adequacy:</b> ${judge.answer_adequacy_flag ?? '—'}</div>
+          <div>${judge.answer_adequacy_reasoning ?? '—'}</div>
+        `;
+      });
+
+      for (let i = (dp.llm_judges || []).length; i < 3; ++i) {
+        judgeBoxes[i].innerHTML = `<div class="judge-title">LLM Judge ${i + 1}</div><div class="judge-empty">No data</div>`;
+      }
+    }
+
+    function renderGraphData(graphData) {
+      renderHeader(graphData);
+      clearJudges();
+      clearDataPoints();
+      clearQAContent();
+
+      const cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements: [
+          ...graphData.nodes.map(n => ({ data: n })),
+          ...graphData.edges.map(e => ({ data: e }))
+        ],
+        style: [
+          { selector: 'node', style: { 'background-color': '#3498DB', 'label': 'data(label)', 'text-valign': 'bottom', 'text-halign': 'center', 'color': '#222', 'font-size': 14, 'width': 30, 'height': 30, 'border-width': 2, 'border-color': '#222' } },
+          { selector: 'edge', style: { 'width': 2, 'line-color': '#888', 'target-arrow-color': '#888', 'target-arrow-shape': 'triangle', 'curve-style': 'bezier', 'label': 'data(label)', 'font-size': 12, 'color': '#222' } },
+          { selector: 'edge.highlighted', style: { 'line-color': '#FF4136', 'target-arrow-color': '#FF4136', 'width': 4 } },
+        ],
+        layout: {
+          name: 'cose',
+          animate: false,
+          nodeRepulsion: 12000,
+          idealEdgeLength: 200,
+          nodeDimensionsIncludeLabels: true,
+          padding: 50
+        }
+      });
+
+      const panel = document.getElementById('datapoint-panel-content');
+      const qaContent = document.getElementById('qa-content');
+
+      graphData.datapoints.forEach((dp) => {
+        const btn = document.createElement('div');
+        btn.className = 'datapoint-btn';
+        btn.title = 'Show Q/A';
+        btn.onclick = () => {
+          cy.edges().removeClass('highlighted');
+          dp.supporting_fact_edge_ids.forEach(eid => {
+            const edge = cy.getElementById(eid);
+            if (edge) edge.addClass('highlighted');
+          });
+          renderQA(qaContent, judgeBoxes, dp);
+        };
+        panel.appendChild(btn);
+      });
+    }
+  </script>
+
+  <script>
+    const graphs = {{ site.data.graphs.graphs | jsonify }};
+    // Pick random graph from graphs
+    const randomGraphIndex = Math.floor(Math.random() * graphs.length);
+    const graphData = graphs[randomGraphIndex];
+    renderGraphData(graphData);
+  </script>
+
+  <script>
+    // Function to update the graphData to another random graph
+    function updateGraphData() {
+      const randomGraphIndex = Math.floor(Math.random() * graphs.length);
+      const newGraphData = graphs[randomGraphIndex];
+      renderGraphData(newGraphData);
+    }
+  </script>
+</body>
