@@ -231,55 +231,80 @@
         },
         {
             "id": "graph2",
-            "name": "Football Clubs and Players 2",
+            "name": "Railway Manufacturers and Trains",
+            "description": "This graph contains information about railway manufacturers and the trains they produced, including their connections to notable individuals and countries.",
             "nodes": [
                 {
                     "id": "n0",
-                    "label": "\u00c1d\u00e1m Bogd\u00e1n"
+                    "label": "Nsb Sk Type 1 Q11889958"
                 },
                 {
                     "id": "n1",
-                    "label": "Bolton Wanderers F.C."
+                    "label": "Skabo Jernbanevognfabrikk"
                 },
                 {
                     "id": "n2",
-                    "label": "Wigan Athletic F.C."
+                    "label": "Str\u00f8mmens V\u00e6rksted"
                 },
                 {
                     "id": "n3",
-                    "label": "Gary Cahill"
+                    "label": "Gullfisk"
                 },
                 {
                     "id": "n4",
-                    "label": "English Football League"
+                    "label": "OS T2000"
                 },
                 {
                     "id": "n5",
-                    "label": "Aston Villa F.C."
+                    "label": "AEG"
                 },
                 {
                     "id": "n6",
-                    "label": "Steve Fulton"
+                    "label": "Adolf Endler"
                 },
                 {
                     "id": "n7",
-                    "label": "Celtic F.C."
+                    "label": "D\u00fcsseldorf"
                 },
                 {
                     "id": "n8",
-                    "label": "Partick Thistle F.C."
+                    "label": "Germany"
                 },
                 {
                     "id": "n9",
-                    "label": "Peterborough United F.C."
+                    "label": "DB Class 111"
                 },
                 {
                     "id": "n10",
-                    "label": "Jay Fulton"
+                    "label": "Siemens"
                 },
                 {
                     "id": "n11",
-                    "label": "Swansea City A.F.C."
+                    "label": "Ernst Preu\u00df Q94760788"
+                },
+                {
+                    "id": "n12",
+                    "label": "Duewag"
+                },
+                {
+                    "id": "n13",
+                    "label": "SL79"
+                },
+                {
+                    "id": "n14",
+                    "label": "UNESCO"
+                },
+                {
+                    "id": "n15",
+                    "label": "NSB Class 68"
+                },
+                {
+                    "id": "n16",
+                    "label": "Norsk Elektrisk & Brown Boveri"
+                },
+                {
+                    "id": "n17",
+                    "label": "Comoros"
                 }
             ],
             "edges": [
@@ -287,87 +312,135 @@
                     "id": "e0",
                     "source": "n0",
                     "target": "n1",
-                    "label": "memberOf"
+                    "label": "manufacturer"
                 },
                 {
                     "id": "e1",
                     "source": "n0",
                     "target": "n2",
-                    "label": "memberOf"
+                    "label": "manufacturer"
                 },
                 {
                     "id": "e2",
                     "source": "n3",
-                    "target": "n4",
-                    "label": "playsIn"
+                    "target": "n2",
+                    "label": "manufacturer"
                 },
                 {
                     "id": "e3",
-                    "source": "n3",
-                    "target": "n1",
-                    "label": "memberOf"
+                    "source": "n4",
+                    "target": "n5",
+                    "label": "manufacturer"
                 },
                 {
                     "id": "e4",
-                    "source": "n3",
-                    "target": "n5",
-                    "label": "memberOf"
+                    "source": "n4",
+                    "target": "n2",
+                    "label": "manufacturer"
                 },
                 {
                     "id": "e5",
                     "source": "n6",
                     "target": "n7",
-                    "label": "memberOf"
+                    "label": "birthPlace"
                 },
                 {
                     "id": "e6",
                     "source": "n6",
                     "target": "n8",
-                    "label": "memberOf"
+                    "label": "nationality"
                 },
                 {
                     "id": "e7",
-                    "source": "n6",
-                    "target": "n1",
+                    "source": "n8",
+                    "target": "n14",
                     "label": "memberOf"
                 },
                 {
                     "id": "e8",
-                    "source": "n6",
-                    "target": "n9",
-                    "label": "memberOf"
+                    "source": "n9",
+                    "target": "n10",
+                    "label": "manufacturer"
                 },
                 {
                     "id": "e9",
-                    "source": "n10",
-                    "target": "n2",
-                    "label": "memberOf"
+                    "source": "n9",
+                    "target": "n5",
+                    "label": "manufacturer"
                 },
                 {
                     "id": "e10",
-                    "source": "n10",
-                    "target": "n11",
+                    "source": "n11",
+                    "target": "n5",
+                    "label": "worksFor"
+                },
+                {
+                    "id": "e11",
+                    "source": "n11",
+                    "target": "n8",
+                    "label": "nationality"
+                },
+                {
+                    "id": "e12",
+                    "source": "n12",
+                    "target": "n10",
+                    "label": "ownedBy"
+                },
+                {
+                    "id": "e13",
+                    "source": "n13",
+                    "target": "n12",
+                    "label": "manufacturer"
+                },
+                {
+                    "id": "e14",
+                    "source": "n15",
+                    "target": "n16",
+                    "label": "manufacturer"
+                },
+                {
+                    "id": "e15",
+                    "source": "n15",
+                    "target": "n2",
+                    "label": "manufacturer"
+                },
+                {
+                    "id": "e16",
+                    "source": "n17",
+                    "target": "n14",
                     "label": "memberOf"
                 }
             ],
             "datapoints": [
                 {
-                    "question": "Which football club connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history?",
-                    "answer": "Bolton Wanderers F.C.",
+                    "question": "Which UNESCO member country has a railway manufacturer that produced both the OS T2000 and employed Ernst Preu\u00df?",
+                    "answer": "Germany",
                     "supporting_facts": [
                         {
-                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
-                            "predicate": "memberOf",
-                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                            "subject": "OS_T2000",
+                            "predicate": "manufacturer",
+                            "object": "AEG"
                         },
                         {
-                            "subject": "Steve_Fulton",
+                            "subject": "Ernst_Preu\u00df_Q94760788",
+                            "predicate": "worksFor",
+                            "object": "AEG"
+                        },
+                        {
+                            "subject": "Ernst_Preu\u00df_Q94760788",
+                            "predicate": "nationality",
+                            "object": "Germany"
+                        },
+                        {
+                            "subject": "Germany",
                             "predicate": "memberOf",
-                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                            "object": "UNESCO"
                         }
                     ],
                     "supporting_fact_edge_ids": [
-                        "e0",
+                        "e3",
+                        "e10",
+                        "e11",
                         "e7"
                     ],
                     "llm_judges": [
@@ -377,9 +450,9 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton have a career history involving Bolton Wanderers F.C., which implies that the answer is supported by the given facts.",
+                            "answer_support_reasoning": "The fact that Ernst Preu\u00df worked for AEG and his nationality being Germany, along with AEG being the manufacturer of OS T2000, implies that Germany is the country where the railway manufacturer is located.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly addresses the question, asking which football club connects the two individuals, and Bolton Wanderers F.C. is a sufficient and clear response."
+                            "answer_adequacy_reasoning": "The answer is sufficient and clear in identifying the country, Germany, where both the mentioned scenarios take place."
                         },
                         {
                             "logical_structure_flag": true,
@@ -387,9 +460,9 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton are members of Bolton Wanderers F.C., as indicated by the supporting facts.",
+                            "answer_support_reasoning": "The supporting facts indicate that the OS T2000 was manufactured by AEG, Ernst Preu\u00df worked for AEG, Ernst Preu\u00df is a nationality of Germany, and Germany is a member of UNESCO. Therefore, Germany is the UNESCO member country that has a railway manufacturer (AEG) that produced the OS T2000 and employed Ernst Preu\u00df.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the name of the UNESCO member country that has a railway manufacturer that produced the OS T2000 and employed Ernst Preu\u00df."
                         },
                         {
                             "logical_structure_flag": true,
@@ -397,30 +470,36 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "The supporting facts explicitly state that both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton were members of Bolton Wanderers F.C., which directly supports the answer.",
+                            "answer_support_reasoning": "The supporting facts indicate that AEG, the manufacturer of the OS T2000, employed Ernst Preu\u00df, who is German. Additionally, Germany is a member of UNESCO.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
+                            "answer_adequacy_reasoning": "The answer 'Germany' directly and comprehensively addresses the question by identifying the country that meets all the criteria specified: having a railway manufacturer (AEG) that produced the OS T2000 and employed Ernst Preu\u00df, and being a UNESCO member."
                         }
                     ]
                 },
                 {
-                    "question": "Which football club connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history?",
-                    "answer": "Wigan Athletic F.C.",
+                    "question": "Which company manufactured the SL79 and was later owned by the same company that produced the DB Class 111?",
+                    "answer": "Duewag",
                     "supporting_facts": [
                         {
-                            "subject": "Jay_Fulton",
-                            "predicate": "memberOf",
-                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
+                            "subject": "SL79",
+                            "predicate": "manufacturer",
+                            "object": "Duewag"
                         },
                         {
-                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
-                            "predicate": "memberOf",
-                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
+                            "subject": "Duewag",
+                            "predicate": "ownedBy",
+                            "object": "Siemens"
+                        },
+                        {
+                            "subject": "DB_Class_111",
+                            "predicate": "manufacturer",
+                            "object": "Siemens"
                         }
                     ],
                     "supporting_fact_edge_ids": [
-                        "e9",
-                        "e1"
+                        "e13",
+                        "e12",
+                        "e8"
                     ],
                     "llm_judges": [
                         {
@@ -429,19 +508,19 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n have a career history triple featuring 'Wigan_Athletic_F_u002E_C_u002E_'",
+                            "answer_support_reasoning": "The answer is explicitly supported by the provided facts. The SL79's manufacturer is stated as Duewag, and both Duewag and Siemens are mentioned as related companies.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer sufficiently clarifies the connection between Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n, stating the football club that they both have been members of."
+                            "answer_adequacy_reasoning": "The answer is adequate and directly addresses the question. The question asks for the company that manufactured the SL79, and Duewag is the clear manufacturer of this vehicle."
                         },
                         {
                             "logical_structure_flag": true,
-                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are members of Wigan Athletic F.C., as indicated by the supporting facts.",
+                            "answer_support_reasoning": "The supporting facts indicate that the SL79 was manufactured by Duewag and Duewag was later owned by Siemens. Additionally, the DB Class 111 was manufactured by Siemens. Therefore, the answer is supported by the facts.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the name of the company that manufactured the SL79 and was later owned by the same company that produced the DB Class 111."
                         },
                         {
                             "logical_structure_flag": true,
@@ -449,9 +528,61 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "The answer 'Wigan Athletic F.C.' is explicitly supported by the provided facts. Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are listed as members of Wigan Athletic F.C., which directly connects them in their career history.",
+                            "answer_support_reasoning": "The supporting facts indicate that Duewag manufactured the SL79 and was owned by Siemens, which also manufactured the DB Class 111.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer 'Wigan Athletic F.C.' fully and clearly addresses the question. It directly states the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                            "answer_adequacy_reasoning": "The answer 'Duewag' directly addresses the question by identifying the company that manufactured the SL79 and was later owned by the same company that produced the DB Class 111."
+                        }
+                    ]
+                },
+                {
+                    "question": "Which manufacturer produced both the NSB Class 68 and the OS T2000?",
+                    "answer": "Str\u00f8mmens V\u00e6rksted",
+                    "supporting_facts": [
+                        {
+                            "subject": "NSB_Class_68",
+                            "predicate": "manufacturer",
+                            "object": "Str\u00f8mmens_V\u00e6rksted"
+                        },
+                        {
+                            "subject": "OS_T2000",
+                            "predicate": "manufacturer",
+                            "object": "Str\u00f8mmens_V\u00e6rksted"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e15",
+                        "e4"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might confuse or mislead.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The answer is explicitly supported by both triples in the fact set, which state that Str\u00f8mmens V\u00e6rksted manufactured both the NSB Class 68 and the OS T2000.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer is concise and directly addresses the question, asking for the common manufacturer of the two mentioned classes."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that both the NSB Class 68 and the OS T2000 were manufactured by Str\u00f8mmens V\u00e6rksted.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the name of the manufacturer that produced both the NSB Class 68 and the OS T2000."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts explicitly state that Str\u00f8mmens V\u00e6rksted is the manufacturer of both the NSB Class 68 and the OS T2000.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying Str\u00f8mmens V\u00e6rksted as the manufacturer of both specified train models."
                         }
                     ]
                 }
@@ -459,55 +590,64 @@
         },
         {
             "id": "graph3",
-            "name": "Football Clubs and Players 3",
+            "name": "Basketball Players and Teams",
+            "description": "This graph contains information about basketball players, their teams, and notable connections.",
             "nodes": [
                 {
                     "id": "n0",
-                    "label": "\u00c1d\u00e1m Bogd\u00e1n"
+                    "label": "Adam Keefe (basketball)"
                 },
                 {
                     "id": "n1",
-                    "label": "Bolton Wanderers F.C."
+                    "label": "Stanford University"
                 },
                 {
                     "id": "n2",
-                    "label": "Wigan Athletic F.C."
+                    "label": "Utah Jazz"
                 },
                 {
                     "id": "n3",
-                    "label": "Gary Cahill"
+                    "label": "Howie Dallmar"
                 },
                 {
                     "id": "n4",
-                    "label": "English Football League"
+                    "label": "Jennifer Connelly"
                 },
                 {
                     "id": "n5",
-                    "label": "Aston Villa F.C."
+                    "label": "Alita: Battle Angel"
                 },
                 {
                     "id": "n6",
-                    "label": "Steve Fulton"
+                    "label": "Rich Kelley"
                 },
                 {
                     "id": "n7",
-                    "label": "Celtic F.C."
+                    "label": "Phoenix Suns"
                 },
                 {
                     "id": "n8",
-                    "label": "Partick Thistle F.C."
+                    "label": "Brooklyn Nets"
                 },
                 {
                     "id": "n9",
-                    "label": "Peterborough United F.C."
+                    "label": "Sacramento Kings"
                 },
                 {
                     "id": "n10",
-                    "label": "Jay Fulton"
+                    "label": "Woodside High School (California)"
                 },
                 {
                     "id": "n11",
-                    "label": "Swansea City A.F.C."
+                    "label": "Denver Nuggets"
+                },
+                {
+                    "id": "n12",
+                    "label": "Dave Lattin"
+                },
+                {
+                    "id": "n13",
+                    "label": "Memphis Sounds"
                 }
             ],
             "edges": [
@@ -515,7 +655,7 @@
                     "id": "e0",
                     "source": "n0",
                     "target": "n1",
-                    "label": "memberOf"
+                    "label": "alumniOf"
                 },
                 {
                     "id": "e1",
@@ -526,20 +666,20 @@
                 {
                     "id": "e2",
                     "source": "n3",
-                    "target": "n4",
-                    "label": "playsIn"
+                    "target": "n1",
+                    "label": "alumniOf"
                 },
                 {
                     "id": "e3",
-                    "source": "n3",
+                    "source": "n4",
                     "target": "n1",
-                    "label": "memberOf"
+                    "label": "alumniOf"
                 },
                 {
                     "id": "e4",
-                    "source": "n3",
-                    "target": "n5",
-                    "label": "memberOf"
+                    "source": "n5",
+                    "target": "n4",
+                    "label": "actor"
                 },
                 {
                     "id": "e5",
@@ -550,13 +690,13 @@
                 {
                     "id": "e6",
                     "source": "n6",
-                    "target": "n8",
-                    "label": "memberOf"
+                    "target": "n1",
+                    "label": "alumniOf"
                 },
                 {
                     "id": "e7",
                     "source": "n6",
-                    "target": "n1",
+                    "target": "n8",
                     "label": "memberOf"
                 },
                 {
@@ -567,47 +707,65 @@
                 },
                 {
                     "id": "e9",
-                    "source": "n10",
-                    "target": "n2",
-                    "label": "memberOf"
+                    "source": "n6",
+                    "target": "n10",
+                    "label": "alumniOf"
                 },
                 {
                     "id": "e10",
-                    "source": "n10",
+                    "source": "n6",
                     "target": "n11",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e11",
+                    "source": "n12",
+                    "target": "n7",
+                    "label": "memberOf"
+                },
+                {
+                    "id": "e12",
+                    "source": "n12",
+                    "target": "n13",
                     "label": "memberOf"
                 }
             ],
             "datapoints": [
                 {
-                    "question": "Which football club connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history?",
-                    "answer": "Bolton Wanderers F.C.",
+                    "question": "Which actor from Alita: Battle Angel shares an alma mater with Adam Keefe?",
+                    "answer": "Jennifer Connelly",
                     "supporting_facts": [
                         {
-                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
-                            "predicate": "memberOf",
-                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                            "subject": "Jennifer_Connelly",
+                            "predicate": "alumniOf",
+                            "object": "Stanford_University"
                         },
                         {
-                            "subject": "Steve_Fulton",
-                            "predicate": "memberOf",
-                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                            "subject": "Adam_Keefe__u0028_basketball_u0029_",
+                            "predicate": "alumniOf",
+                            "object": "Stanford_University"
+                        },
+                        {
+                            "subject": "Alita_u003A__Battle_Angel",
+                            "predicate": "actor",
+                            "object": "Jennifer_Connelly"
                         }
                     ],
                     "supporting_fact_edge_ids": [
+                        "e3",
                         "e0",
-                        "e7"
+                        "e4"
                     ],
                     "llm_judges": [
                         {
                             "logical_structure_flag": true,
-                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "logical_structure_reasoning": "The question is grammatically correct.",
                             "redundancy_flag": false,
-                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
+                            "redundancy_reasoning": "The question does not contain any obvious redundancies.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton have a career history involving Bolton Wanderers F.C., which implies that the answer is supported by the given facts.",
+                            "answer_support_reasoning": "The answer is explicitly supported by the facts, as Jennifer Connelly and Adam Keefe are both stated to be alumni of Stanford University.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly addresses the question, asking which football club connects the two individuals, and Bolton Wanderers F.C. is a sufficient and clear response."
+                            "answer_adequacy_reasoning": "The answer sufficiently addresses the question, as it provides the name of the actor (Jennifer Connelly) who shares the same alma mater (Stanford University) with Adam Keefe."
                         },
                         {
                             "logical_structure_flag": true,
@@ -615,9 +773,9 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton are members of Bolton Wanderers F.C., as indicated by the supporting facts.",
+                            "answer_support_reasoning": "The supporting facts indicate that both Jennifer Connelly and Adam Keefe are alumni of Stanford University. Additionally, Jennifer Connelly is an actor in Alita: Battle Angel.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the name of the actor from Alita: Battle Angel who shares an alma mater with Adam Keefe."
                         },
                         {
                             "logical_structure_flag": true,
@@ -625,41 +783,41 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "The supporting facts explicitly state that both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton were members of Bolton Wanderers F.C., which directly supports the answer.",
+                            "answer_support_reasoning": "The supporting facts indicate that both Jennifer Connelly and Adam Keefe are alumni of Stanford University, which justifies the answer.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
+                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying Jennifer Connelly as the actor from Alita: Battle Angel who shares an alma mater with Adam Keefe."
                         }
                     ]
                 },
                 {
-                    "question": "Which football club connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history?",
-                    "answer": "Wigan Athletic F.C.",
+                    "question": "Which NBA team member who played for the Phoenix Suns also attended Woodside High School in California?",
+                    "answer": "Rich Kelley",
                     "supporting_facts": [
                         {
-                            "subject": "Jay_Fulton",
+                            "subject": "Rich_Kelley",
                             "predicate": "memberOf",
-                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
+                            "object": "Phoenix_Suns"
                         },
                         {
-                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
-                            "predicate": "memberOf",
-                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
+                            "subject": "Rich_Kelley",
+                            "predicate": "alumniOf",
+                            "object": "Woodside_High_School__u0028_California_u0029_"
                         }
                     ],
                     "supporting_fact_edge_ids": [
-                        "e9",
-                        "e1"
+                        "e5",
+                        "e9"
                     ],
                     "llm_judges": [
                         {
                             "logical_structure_flag": true,
                             "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
                             "redundancy_flag": false,
-                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
+                            "redundancy_reasoning": "The question does not contain any obvious redundancies.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n have a career history triple featuring 'Wigan_Athletic_F_u002E_C_u002E_'",
+                            "answer_support_reasoning": "The answer is explicitly supported by the provided facts. Rich Kelley is indeed a member of the Phoenix Suns according to the first triple, and the second triple confirms he attended Woodside High School in California.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer sufficiently clarifies the connection between Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n, stating the football club that they both have been members of."
+                            "answer_adequacy_reasoning": "The answer is adequate and directly addresses the question. It provides a clear response identifying Rich Kelley as the NBA player who played for the Phoenix Suns and attended Woodside High School."
                         },
                         {
                             "logical_structure_flag": true,
@@ -667,9 +825,9 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are members of Wigan Athletic F.C., as indicated by the supporting facts.",
+                            "answer_support_reasoning": "The supporting facts indicate that Rich Kelley is a member of the Phoenix Suns and an alumni of Woodside High School in California. Therefore, the answer is explicitly supported by the provided facts.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the name of an NBA team member who played for the Phoenix Suns and also attended Woodside High School in California."
                         },
                         {
                             "logical_structure_flag": true,
@@ -677,9 +835,67 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "The answer 'Wigan Athletic F.C.' is explicitly supported by the provided facts. Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are listed as members of Wigan Athletic F.C., which directly connects them in their career history.",
+                            "answer_support_reasoning": "The supporting facts explicitly state that Rich Kelley is a member of the Phoenix Suns and an alumnus of Woodside High School in California.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer 'Wigan Athletic F.C.' fully and clearly addresses the question. It directly states the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                            "answer_adequacy_reasoning": "The answer directly and completely addresses the question by identifying Rich Kelley as the NBA team member who played for the Phoenix Suns and attended Woodside High School in California."
+                        }
+                    ]
+                },
+                {
+                    "question": "Which Stanford University alumnus played for both the Denver Nuggets and Sacramento Kings?",
+                    "answer": "Rich Kelley",
+                    "supporting_facts": [
+                        {
+                            "subject": "Rich_Kelley",
+                            "predicate": "alumniOf",
+                            "object": "Stanford_University"
+                        },
+                        {
+                            "subject": "Rich_Kelley",
+                            "predicate": "memberOf",
+                            "object": "Denver_Nuggets"
+                        },
+                        {
+                            "subject": "Rich_Kelley",
+                            "predicate": "memberOf",
+                            "object": "Sacramento_Kings"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e6",
+                        "e10",
+                        "e8"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The answer is explicitly supported by the provided facts. Rich Kelley's alumni status and his association with both basketball teams are stated in the facts.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer is concise and directly addresses the question, leaving no ambiguity."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that Rich Kelley is an alumnus of Stanford University and was a member of both the Denver Nuggets and Sacramento Kings.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the name of a Stanford University alumnus who played for both the Denver Nuggets and Sacramento Kings."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts explicitly state that Rich Kelley is an alumnus of Stanford University and was a member of both the Denver Nuggets and Sacramento Kings.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and completely addresses the question by identifying Rich Kelley as the Stanford University alumnus who played for both the Denver Nuggets and Sacramento Kings."
                         }
                     ]
                 }
@@ -687,55 +903,80 @@
         },
         {
             "id": "graph4",
-            "name": "Football Clubs and Players 4",
+            "name": "Programming Languages and Their Creators",
+            "description": "This graph contains information about programming languages, their creators, and notable works.",
             "nodes": [
                 {
                     "id": "n0",
-                    "label": "\u00c1d\u00e1m Bogd\u00e1n"
+                    "label": "Dennis Ritchie"
                 },
                 {
                     "id": "n1",
-                    "label": "Bolton Wanderers F.C."
+                    "label": "Bell Labs"
                 },
                 {
                     "id": "n2",
-                    "label": "Wigan Athletic F.C."
+                    "label": "C (programming language)"
                 },
                 {
                     "id": "n3",
-                    "label": "Gary Cahill"
+                    "label": "Anders Hejlsberg"
                 },
                 {
                     "id": "n4",
-                    "label": "English Football League"
+                    "label": "C Sharp (programming language)"
                 },
                 {
                     "id": "n5",
-                    "label": "Aston Villa F.C."
+                    "label": "Microsoft"
                 },
                 {
                     "id": "n6",
-                    "label": "Steve Fulton"
+                    "label": "Visual Studio"
                 },
                 {
                     "id": "n7",
-                    "label": "Celtic F.C."
+                    "label": "Linux Foundation"
                 },
                 {
                     "id": "n8",
-                    "label": "Partick Thistle F.C."
+                    "label": "World Wide Web Consortium"
                 },
                 {
                     "id": "n9",
-                    "label": "Peterborough United F.C."
+                    "label": "The Code (2001 film)"
                 },
                 {
                     "id": "n10",
-                    "label": "Jay Fulton"
+                    "label": "Miguel de Icaza"
                 },
                 {
                     "id": "n11",
-                    "label": "Swansea City A.F.C."
+                    "label": "AT&T"
+                },
+                {
+                    "id": "n12",
+                    "label": "Robert Tarjan"
+                },
+                {
+                    "id": "n13",
+                    "label": "Hewlett-Packard"
+                },
+                {
+                    "id": "n14",
+                    "label": "Microsoft Windows"
+                },
+                {
+                    "id": "n15",
+                    "label": "Bjarne Stroustrup"
+                },
+                {
+                    "id": "n16",
+                    "label": "C++"
+                },
+                {
+                    "id": "n17",
+                    "label": ".NET Framework"
                 }
             ],
             "edges": [
@@ -743,151 +984,141 @@
                     "id": "e0",
                     "source": "n0",
                     "target": "n1",
-                    "label": "memberOf"
+                    "label": "worksFor"
                 },
                 {
                     "id": "e1",
                     "source": "n0",
                     "target": "n2",
-                    "label": "memberOf"
+                    "label": "notableWork"
                 },
                 {
                     "id": "e2",
                     "source": "n3",
                     "target": "n4",
-                    "label": "playsIn"
+                    "label": "notableWork"
                 },
                 {
                     "id": "e3",
                     "source": "n3",
-                    "target": "n1",
-                    "label": "memberOf"
+                    "target": "n5",
+                    "label": "worksFor"
                 },
                 {
                     "id": "e4",
-                    "source": "n3",
-                    "target": "n5",
+                    "source": "n5",
+                    "target": "n7",
                     "label": "memberOf"
                 },
                 {
                     "id": "e5",
-                    "source": "n6",
-                    "target": "n7",
+                    "source": "n5",
+                    "target": "n8",
                     "label": "memberOf"
                 },
                 {
                     "id": "e6",
                     "source": "n6",
+                    "target": "n5",
+                    "label": "manufacturer"
+                },
+                {
+                    "id": "e7",
+                    "source": "n9",
+                    "target": "n10",
+                    "label": "actor"
+                },
+                {
+                    "id": "e8",
+                    "source": "n10",
+                    "target": "n5",
+                    "label": "worksFor"
+                },
+                {
+                    "id": "e9",
+                    "source": "n11",
                     "target": "n8",
                     "label": "memberOf"
                 },
                 {
-                    "id": "e7",
-                    "source": "n6",
-                    "target": "n1",
-                    "label": "memberOf"
-                },
-                {
-                    "id": "e8",
-                    "source": "n6",
-                    "target": "n9",
-                    "label": "memberOf"
-                },
-                {
-                    "id": "e9",
-                    "source": "n10",
-                    "target": "n2",
-                    "label": "memberOf"
-                },
-                {
                     "id": "e10",
-                    "source": "n10",
-                    "target": "n11",
+                    "source": "n12",
+                    "target": "n1",
+                    "label": "worksFor"
+                },
+                {
+                    "id": "e11",
+                    "source": "n12",
+                    "target": "n13",
+                    "label": "worksFor"
+                },
+                {
+                    "id": "e12",
+                    "source": "n13",
+                    "target": "n7",
                     "label": "memberOf"
+                },
+                {
+                    "id": "e13",
+                    "source": "n14",
+                    "target": "n5",
+                    "label": "manufacturer"
+                },
+                {
+                    "id": "e14",
+                    "source": "n15",
+                    "target": "n1",
+                    "label": "worksFor"
+                },
+                {
+                    "id": "e15",
+                    "source": "n15",
+                    "target": "n16",
+                    "label": "notableWork"
+                },
+                {
+                    "id": "e16",
+                    "source": "n17",
+                    "target": "n5",
+                    "label": "manufacturer"
                 }
             ],
             "datapoints": [
                 {
-                    "question": "Which football club connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history?",
-                    "answer": "Bolton Wanderers F.C.",
+                    "question": "Which programming language creator worked at the same company as Robert Tarjan?",
+                    "answer": "Dennis Ritchie",
                     "supporting_facts": [
                         {
-                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
-                            "predicate": "memberOf",
-                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                            "subject": "Dennis_Ritchie",
+                            "predicate": "worksFor",
+                            "object": "Bell_Labs"
                         },
                         {
-                            "subject": "Steve_Fulton",
-                            "predicate": "memberOf",
-                            "object": "Bolton_Wanderers_F_u002E_C_u002E_"
+                            "subject": "Robert_Tarjan",
+                            "predicate": "worksFor",
+                            "object": "Bell_Labs"
+                        },
+                        {
+                            "subject": "Dennis_Ritchie",
+                            "predicate": "notableWork",
+                            "object": "C__u0028_programming_language_u0029_"
                         }
                     ],
                     "supporting_fact_edge_ids": [
                         "e0",
-                        "e7"
-                    ],
-                    "llm_judges": [
-                        {
-                            "logical_structure_flag": true,
-                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
-                            "redundancy_flag": false,
-                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
-                            "answer_support_flag": true,
-                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton have a career history involving Bolton Wanderers F.C., which implies that the answer is supported by the given facts.",
-                            "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly addresses the question, asking which football club connects the two individuals, and Bolton Wanderers F.C. is a sufficient and clear response."
-                        },
-                        {
-                            "logical_structure_flag": true,
-                            "logical_structure_reasoning": "The grammar and syntax are correct.",
-                            "redundancy_flag": false,
-                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
-                            "answer_support_flag": true,
-                            "answer_support_reasoning": "Both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton are members of Bolton Wanderers F.C., as indicated by the supporting facts.",
-                            "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
-                        },
-                        {
-                            "logical_structure_flag": true,
-                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
-                            "redundancy_flag": false,
-                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
-                            "answer_support_flag": true,
-                            "answer_support_reasoning": "The supporting facts explicitly state that both \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton were members of Bolton Wanderers F.C., which directly supports the answer.",
-                            "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying the football club that connects \u00c1d\u00e1m Bogd\u00e1n and Steve Fulton in their career history."
-                        }
-                    ]
-                },
-                {
-                    "question": "Which football club connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history?",
-                    "answer": "Wigan Athletic F.C.",
-                    "supporting_facts": [
-                        {
-                            "subject": "Jay_Fulton",
-                            "predicate": "memberOf",
-                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
-                        },
-                        {
-                            "subject": "\u00c1d\u00e1m_Bogd\u00e1n",
-                            "predicate": "memberOf",
-                            "object": "Wigan_Athletic_F_u002E_C_u002E_"
-                        }
-                    ],
-                    "supporting_fact_edge_ids": [
-                        "e9",
+                        "e10",
                         "e1"
                     ],
                     "llm_judges": [
                         {
                             "logical_structure_flag": true,
-                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "logical_structure_reasoning": "The question is grammatically correct and has a clear structure.",
                             "redundancy_flag": false,
-                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
+                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might cause redundancy.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n have a career history triple featuring 'Wigan_Athletic_F_u002E_C_u002E_'",
+                            "answer_support_reasoning": "The triples show that both Dennis Ritchie and Robert Tarjan worked at Bell Labs, implying that they worked together at the same company.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer sufficiently clarifies the connection between Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n, stating the football club that they both have been members of."
+                            "answer_adequacy_reasoning": "The answer is concise and directly addresses the question."
                         },
                         {
                             "logical_structure_flag": true,
@@ -895,9 +1126,73 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are members of Wigan Athletic F.C., as indicated by the supporting facts.",
+                            "answer_support_reasoning": "The supporting facts indicate that both Dennis Ritchie and Robert Tarjan work for Bell Labs. This fact implicitly supports the answer that Dennis Ritchie, the creator of the C programming language, worked at the same company as Robert Tarjan.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the name of a programming language creator who worked at the same company as Robert Tarjan."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that both Dennis Ritchie and Robert Tarjan worked for Bell Labs, which justifies the answer that Dennis Ritchie worked at the same company as Robert Tarjan.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying Dennis Ritchie as the programming language creator who worked at the same company as Robert Tarjan."
+                        }
+                    ]
+                },
+                {
+                    "question": "Who is an actor in a film and also works for a company that's a member of both the Linux Foundation and World Wide Web Consortium?",
+                    "answer": "Miguel de Icaza",
+                    "supporting_facts": [
+                        {
+                            "subject": "The_Code__u0028_2001_film_u0029_",
+                            "predicate": "actor",
+                            "object": "Miguel_de_Icaza"
+                        },
+                        {
+                            "subject": "Miguel_de_Icaza",
+                            "predicate": "worksFor",
+                            "object": "Microsoft"
+                        },
+                        {
+                            "subject": "Microsoft",
+                            "predicate": "memberOf",
+                            "object": "Linux_Foundation"
+                        },
+                        {
+                            "subject": "Microsoft",
+                            "predicate": "memberOf",
+                            "object": "World_Wide_Web_Consortium"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e7",
+                        "e8",
+                        "e4",
+                        "e5"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any obvious redundancies.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The triples explicitly support the answer: Miguel de Icaza acts in the film 'The Code' and also works for Microsoft, which is a member of both the Linux Foundation and World Wide Web Consortium.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer is concise and directly addresses the question."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that Miguel de Icaza is an actor in the film 'The Code (2001 film)' and works for Microsoft, which is a member of both the Linux Foundation and World Wide Web Consortium.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the name of an actor who also works for a company that is a member of both the Linux Foundation and World Wide Web Consortium."
                         },
                         {
                             "logical_structure_flag": true,
@@ -905,9 +1200,390 @@
                             "redundancy_flag": false,
                             "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
                             "answer_support_flag": true,
-                            "answer_support_reasoning": "The answer 'Wigan Athletic F.C.' is explicitly supported by the provided facts. Both Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n are listed as members of Wigan Athletic F.C., which directly connects them in their career history.",
+                            "answer_support_reasoning": "The supporting facts explicitly state that Miguel de Icaza is an actor in the film 'The Code (2001 film)' and works for Microsoft, which is a member of both the Linux Foundation and World Wide Web Consortium.",
                             "answer_adequacy_flag": true,
-                            "answer_adequacy_reasoning": "The answer 'Wigan Athletic F.C.' fully and clearly addresses the question. It directly states the football club that connects Jay Fulton and \u00c1d\u00e1m Bogd\u00e1n in their career history."
+                            "answer_adequacy_reasoning": "The answer directly and comprehensively addresses the question by identifying Miguel de Icaza as the actor in the film and confirming his employment at a company that is a member of both specified organizations."
+                        }
+                    ]
+                },
+                {
+                    "question": "Which company manufactures Visual Studio and employs the creator of C#?",
+                    "answer": "Microsoft",
+                    "supporting_facts": [
+                        {
+                            "subject": "Visual_Studio",
+                            "predicate": "manufacturer",
+                            "object": "Microsoft"
+                        },
+                        {
+                            "subject": "Anders_Hejlsberg",
+                            "predicate": "worksFor",
+                            "object": "Microsoft"
+                        },
+                        {
+                            "subject": "Anders_Hejlsberg",
+                            "predicate": "notableWork",
+                            "object": "C_Sharp__u0028_programming_language_u0029_"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e6",
+                        "e3",
+                        "e2"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any explicit answers or obvious phrasing that might lead to confusion.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The triples explicitly state that Microsoft manufactures Visual Studio and that Anders Hejlsberg, the creator of C#, works for Microsoft.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer is concise and directly addresses the question."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that 'Microsoft' is the manufacturer of 'Visual_Studio' and 'Anders_Hejlsberg', the creator of 'C#', works for 'Microsoft'. Therefore, the answer is explicitly supported by the provided facts.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer 'Microsoft' directly and fully addresses the question by naming the company that manufactures 'Visual_Studio' and employs the creator of 'C#'."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts explicitly state that Microsoft manufactures Visual Studio and that Anders Hejlsberg, the creator of C#, works for Microsoft.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer 'Microsoft' directly and comprehensively addresses the question by identifying the company that manufactures Visual Studio and employs the creator of C#."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "graph5",
+            "name": "Bacterial Taxonomy and Relationships",
+            "description": "This graph contains information about various bacterial taxa, their relationships, and notable members.",
+            "nodes": [
+                {
+                    "id": "n0",
+                    "label": "Vibrio vulnificus"
+                },
+                {
+                    "id": "n1",
+                    "label": "Vibrio"
+                },
+                {
+                    "id": "n2",
+                    "label": "Yersinia"
+                },
+                {
+                    "id": "n3",
+                    "label": "Enterobacteriaceae"
+                },
+                {
+                    "id": "n4",
+                    "label": "Aliivibrio fischeri"
+                },
+                {
+                    "id": "n5",
+                    "label": "Aliivibrio"
+                },
+                {
+                    "id": "n6",
+                    "label": "Alteromonadales"
+                },
+                {
+                    "id": "n7",
+                    "label": "Gammaproteobacteria"
+                },
+                {
+                    "id": "n8",
+                    "label": "Purple sulfur bacteria"
+                },
+                {
+                    "id": "n9",
+                    "label": "Vibrionaceae"
+                },
+                {
+                    "id": "n10",
+                    "label": "Vibrionales Q15105566"
+                },
+                {
+                    "id": "n11",
+                    "label": "Shigella"
+                },
+                {
+                    "id": "n12",
+                    "label": "Escherichia"
+                },
+                {
+                    "id": "n13",
+                    "label": "Klebsiella"
+                },
+                {
+                    "id": "n14",
+                    "label": "Escherichia coli"
+                },
+                {
+                    "id": "n15",
+                    "label": "Photobacterium"
+                },
+                {
+                    "id": "n16",
+                    "label": "Salmonella"
+                },
+                {
+                    "id": "n17",
+                    "label": "Aeromonadales"
+                },
+                {
+                    "id": "n18",
+                    "label": "Enterobacterales"
+                }
+            ],
+            "edges": [
+                {
+                    "id": "e0",
+                    "source": "n0",
+                    "target": "n1",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e1",
+                    "source": "n1",
+                    "target": "n9",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e2",
+                    "source": "n2",
+                    "target": "n3",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e3",
+                    "source": "n3",
+                    "target": "n18",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e4",
+                    "source": "n4",
+                    "target": "n5",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e5",
+                    "source": "n5",
+                    "target": "n9",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e6",
+                    "source": "n6",
+                    "target": "n7",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e7",
+                    "source": "n8",
+                    "target": "n7",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e8",
+                    "source": "n9",
+                    "target": "n10",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e9",
+                    "source": "n10",
+                    "target": "n7",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e10",
+                    "source": "n11",
+                    "target": "n3",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e11",
+                    "source": "n12",
+                    "target": "n3",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e12",
+                    "source": "n13",
+                    "target": "n3",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e13",
+                    "source": "n14",
+                    "target": "n12",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e14",
+                    "source": "n15",
+                    "target": "n9",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e15",
+                    "source": "n16",
+                    "target": "n3",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e16",
+                    "source": "n17",
+                    "target": "n7",
+                    "label": "parentTaxon"
+                },
+                {
+                    "id": "e17",
+                    "source": "n18",
+                    "target": "n7",
+                    "label": "parentTaxon"
+                }
+            ],
+            "datapoints": [
+                {
+                    "question": "Which bacterial family includes both Escherichia coli and Salmonella as members?",
+                    "answer": "Enterobacteriaceae",
+                    "supporting_facts": [
+                        {
+                            "subject": "Escherichia_coli",
+                            "predicate": "parentTaxon",
+                            "object": "Escherichia"
+                        },
+                        {
+                            "subject": "Escherichia",
+                            "predicate": "parentTaxon",
+                            "object": "Enterobacteriaceae"
+                        },
+                        {
+                            "subject": "Salmonella",
+                            "predicate": "parentTaxon",
+                            "object": "Enterobacteriaceae"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e13",
+                        "e11",
+                        "e15"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any obvious redundancies.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The presence of two triples indicating the relationship between Escherichia and Enterobacteriaceae, along with a similar relationship for Salmonella, explicitly supports the answer.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly addresses the question, asking for the bacterial family that includes both Escherichia coli and Salmonella. The adequacy of the answer is thus supported."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that Escherichia coli and Salmonella both have 'Enterobacteriaceae' as their parent taxon. This means that both Escherichia coli and Salmonella belong to the Enterobacteriaceae family.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer 'Enterobacteriaceae' directly and fully addresses the question by providing the name of the bacterial family that includes both Escherichia coli and Salmonella as members."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax of the question are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that both Escherichia coli and Salmonella are members of the Enterobacteriaceae family. Specifically, Escherichia coli is a member of the Escherichia genus, which is part of the Enterobacteriaceae family, and Salmonella is directly part of the Enterobacteriaceae family.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer 'Enterobacteriaceae' directly and comprehensively addresses the question by identifying the bacterial family that includes both Escherichia coli and Salmonella."
+                        }
+                    ]
+                },
+                {
+                    "question": "What class of bacteria contains both Vibrio vulnificus and purple sulfur bacteria?",
+                    "answer": "Gammaproteobacteria",
+                    "supporting_facts": [
+                        {
+                            "subject": "Vibrio_vulnificus",
+                            "predicate": "parentTaxon",
+                            "object": "Vibrio"
+                        },
+                        {
+                            "subject": "Vibrio",
+                            "predicate": "parentTaxon",
+                            "object": "Vibrionaceae"
+                        },
+                        {
+                            "subject": "Vibrionaceae",
+                            "predicate": "parentTaxon",
+                            "object": "Vibrionales_Q15105566"
+                        },
+                        {
+                            "subject": "Vibrionales_Q15105566",
+                            "predicate": "parentTaxon",
+                            "object": "Gammaproteobacteria"
+                        },
+                        {
+                            "subject": "Purple_sulfur_bacteria",
+                            "predicate": "parentTaxon",
+                            "object": "Gammaproteobacteria"
+                        }
+                    ],
+                    "supporting_fact_edge_ids": [
+                        "e0",
+                        "e1",
+                        "e8",
+                        "e9",
+                        "e7"
+                    ],
+                    "llm_judges": [
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain any obvious redundancies.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts show a hierarchical relationship between the given bacteria and the parent taxon Gammaproteobacteria. Both Vibrio vulnificus and purple sulfur bacteria are ultimately subclassified under Gammaproteobacteria.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly addresses the question, identifying the class of bacteria that contains the mentioned species. The response is clear and sufficiently informative."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The grammar and syntax are correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its own answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that Vibrio vulnificus belongs to the class Gammaproteobacteria through the taxonomic hierarchy of Vibrio -> Vibrionaceae -> Vibrionales_Q15105566 -> Gammaproteobacteria. Additionally, the supporting facts state that purple sulfur bacteria also belong to the class Gammaproteobacteria.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer directly and fully addresses the question by providing the class of bacteria that contains both Vibrio vulnificus and purple sulfur bacteria."
+                        },
+                        {
+                            "logical_structure_flag": true,
+                            "logical_structure_reasoning": "The question is grammatically and syntactically correct.",
+                            "redundancy_flag": false,
+                            "redundancy_reasoning": "The question does not contain its answer explicitly or through overly obvious phrasing.",
+                            "answer_support_flag": true,
+                            "answer_support_reasoning": "The supporting facts indicate that both Vibrio vulnificus and purple sulfur bacteria belong to the class Gammaproteobacteria. Vibrio vulnificus is a member of the Vibrionaceae family, which is part of the Vibrionales order, and ultimately the Gammaproteobacteria class. Similarly, purple sulfur bacteria are directly classified under the Gammaproteobacteria class.",
+                            "answer_adequacy_flag": true,
+                            "answer_adequacy_reasoning": "The answer 'Gammaproteobacteria' directly and comprehensively addresses the question by identifying the class that contains both Vibrio vulnificus and purple sulfur bacteria."
                         }
                     ]
                 }
